@@ -9,7 +9,7 @@ func TestCalculateWith2 (t *testing.T) {
 }
 
 func TestCalculateWith4 (t *testing.T) {
-	if Calculate(4) != 5 {
+	if Calculate(4) != 6 {
 		t.Error("Expected 4 + 2 to equal 6")
 	}
 }

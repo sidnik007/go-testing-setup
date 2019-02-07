@@ -47,6 +47,7 @@ func init() {
 
 func TestMain(m *testing.M) {
 	opt.Paths = flag.Args()
+	opt.Tags = "~@wip"
 	status := godog.RunWithOptions("acceptance", func(s *godog.Suite) {
 		featureContext(s)
 	}, opt)
